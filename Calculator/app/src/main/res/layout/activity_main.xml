@@ -1,0 +1,320 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/myLayout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_name"
+                    android:id="@+id/txtView"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:enabled="true"
+                    android:textSize="40dp"
+                    android:layout_span="0"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginBottom="50px" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/button1"
+                    android:id="@+id/btn1"
+                    android:layout_below="@+id/txtView"
+                    android:layout_toLeftOf="@+id/btn2"
+                    android:layout_toStartOf="@+id/btn2"
+                    android:layout_weight="1"
+                    android:background="#c9c9c9"
+                    android:textSize="@dimen/textsize"
+                    android:layout_margin="@dimen/button_main_margin"
+                    android:clickable="true"
+                    android:onClick="addNumbers" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/button2"
+                    android:id="@+id/btn2"
+                    android:layout_alignTop="@+id/btn1"
+                    android:layout_toLeftOf="@+id/btn3"
+                    android:layout_toStartOf="@+id/btn3"
+                    android:layout_weight="1"
+                    android:background="#c9c9c9"
+                    android:textSize="@dimen/textsize"
+                    android:layout_margin="@dimen/button_main_margin"
+                    android:onClick="addNumbers" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/button3"
+                    android:id="@+id/btn3"
+                    android:layout_alignTop="@+id/btn2"
+                    android:layout_toLeftOf="@+id/btn4"
+                    android:layout_toStartOf="@+id/btn4"
+                    android:layout_weight="1"
+                    android:background="#c9c9c9"
+                    android:textSize="@dimen/textsize"
+                    android:layout_margin="@dimen/button_main_margin"
+                    android:onClick="addNumbers" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/mark1"
+                    android:id="@+id/btn4"
+                    android:layout_alignTop="@+id/btn3"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="1"
+                    android:background="#ffe7a5"
+                    android:textSize="@dimen/textsize"
+                    android:onClick="markSet"
+                    android:clickable="true"
+                    android:layout_margin="@dimen/button_main_margin" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn5"
+                    android:layout_below="@+id/btn1"
+                    android:layout_alignLeft="@+id/btn1"
+                    android:layout_alignStart="@+id/btn1"
+                    android:layout_weight="1"
+                    android:background="#c9c9c9"
+                    android:textSize="@dimen/textsize"
+                    android:layout_margin="@dimen/button_main_margin"
+                    android:onClick="addNumbers"
+                    android:text="@string/button4" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/button5"
+                    android:id="@+id/btn6"
+                    android:layout_alignBottom="@+id/btn5"
+                    android:layout_toRightOf="@+id/btn5"
+                    android:layout_toEndOf="@+id/btn5"
+                    android:layout_weight="1"
+                    android:background="#c9c9c9"
+                    android:textSize="@dimen/textsize"
+                    android:layout_margin="@dimen/button_main_margin"
+                    android:onClick="addNumbers" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/button6"
+                    android:id="@+id/btn7"
+                    android:layout_alignBottom="@+id/btn6"
+                    android:layout_alignLeft="@+id/btn3"
+                    android:layout_alignStart="@+id/btn3"
+                    android:layout_weight="1"
+                    android:background="#c9c9c9"
+                    android:textSize="@dimen/textsize"
+                    android:layout_margin="@dimen/button_main_margin"
+                    android:onClick="addNumbers" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/mark2"
+                    android:id="@+id/btn8"
+                    android:layout_alignBottom="@+id/btn7"
+                    android:layout_alignRight="@+id/btn4"
+                    android:layout_alignEnd="@+id/btn4"
+                    android:layout_weight="1"
+                    android:background="#ffe7a5"
+                    android:textSize="@dimen/textsize"
+                    android:onClick="markSet"
+                    android:clickable="true"
+                    android:layout_margin="@dimen/button_main_margin" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/button7"
+                    android:id="@+id/btn9"
+                    android:layout_below="@+id/btn5"
+                    android:layout_alignLeft="@+id/btn5"
+                    android:layout_alignStart="@+id/btn5"
+                    android:layout_weight="1"
+                    android:background="#c9c9c9"
+                    android:textSize="@dimen/textsize"
+                    android:layout_margin="@dimen/button_main_margin"
+                    android:onClick="addNumbers" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/button8"
+                    android:id="@+id/btn10"
+                    android:layout_alignBottom="@+id/btn9"
+                    android:layout_toLeftOf="@+id/btn7"
+                    android:layout_toStartOf="@+id/btn7"
+                    android:layout_weight="1"
+                    android:background="#c9c9c9"
+                    android:textSize="@dimen/textsize"
+                    android:layout_margin="@dimen/button_main_margin"
+                    android:onClick="addNumbers" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/button9"
+                    android:id="@+id/btn11"
+                    android:layout_alignBottom="@+id/btn10"
+                    android:layout_toRightOf="@+id/btn10"
+                    android:layout_toEndOf="@+id/btn10"
+                    android:layout_weight="1"
+                    android:background="#c9c9c9"
+                    android:textSize="@dimen/textsize"
+                    android:layout_margin="@dimen/button_main_margin"
+                    android:onClick="addNumbers" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/mark3"
+                    android:id="@+id/btn12"
+                    android:layout_alignBottom="@+id/btn11"
+                    android:layout_alignRight="@+id/btn8"
+                    android:layout_alignEnd="@+id/btn8"
+                    android:layout_weight="1"
+                    android:background="#ffe7a5"
+                    android:textSize="@dimen/textsize"
+                    android:onClick="markSet"
+                    android:clickable="true"
+                    android:layout_margin="@dimen/button_main_margin" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/mark5"
+                    android:id="@+id/btn13"
+                    android:layout_below="@+id/btn9"
+                    android:layout_alignLeft="@+id/btn9"
+                    android:layout_alignStart="@+id/btn9"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/textsize"
+                    android:background="#ffcc75"
+                    android:layout_margin="@dimen/button_main_margin"
+                    android:clickable="true"
+                    android:onClick="clear" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/button0"
+                    android:id="@+id/btn14"
+                    android:layout_alignBottom="@+id/btn13"
+                    android:layout_toRightOf="@+id/btn13"
+                    android:layout_toEndOf="@+id/btn13"
+                    android:layout_weight="1"
+                    android:background="#c9c9c9"
+                    android:textSize="@dimen/textsize"
+                    android:layout_margin="@dimen/button_main_margin"
+                    android:onClick="addNumbers" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/mark6"
+                    android:id="@+id/btn15"
+                    android:layout_alignBottom="@+id/btn14"
+                    android:layout_alignLeft="@+id/btn11"
+                    android:layout_alignStart="@+id/btn11"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/textsize"
+                    android:background="#ffcc75"
+                    android:layout_margin="@dimen/button_main_margin"
+                    android:clickable="true"
+                    android:onClick="calculate" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/mark4"
+                    android:id="@+id/btn16"
+                    android:layout_alignBottom="@+id/btn15"
+                    android:layout_alignLeft="@+id/btn12"
+                    android:layout_alignStart="@+id/btn12"
+                    android:layout_weight="1"
+                    android:background="#ffe7a5"
+                    android:textSize="@dimen/textsize"
+                    android:onClick="markSet"
+                    android:clickable="true"
+                    android:layout_margin="@dimen/button_main_margin" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/android"
+            android:clickable="true"
+            android:onClick="changeColor"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
