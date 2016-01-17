@@ -1,0 +1,37 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="fab_margin">0dp</dimen>
+
+    <!-- *** common *** -->
+    <!-- player text size -->
+    <dimen name="playerTxtSize">30dp</dimen>
+
+    <!-- *** main page *** -->
+    <!-- button size -->
+    <dimen name="button">300px</dimen>
+    <!-- button text size -->
+    <dimen name="buttonTxtSize">20dp</dimen>
+
+    <!-- *** setting page *** -->
+    <!-- ok button text size-->
+    <dimen name="okTxtSize">20dp</dimen>
+    <!-- button size -->
+    <dimen name="buttonOk">200px</dimen>
+    <!-- (horisontal orientation) player text size-->
+    <dimen name="landplayerTxtSize">40dp</dimen>
+    <!-- (horisontal orientation) text size-->
+    <dimen name="landsettingTxtSize">20dp</dimen>
+
+    <!-- *** start page *** -->
+    <!-- timer size -->
+    <dimen name="timer">50dp</dimen>
+    <!-- player A size -->
+    <dimen name="playerA">200dp</dimen>
+    <!-- player B size -->
+    <dimen name="playerB">200dp</dimen>
+    <!-- beam size -->
+    <dimen name="beam">200dp</dimen>
+
+</resources>

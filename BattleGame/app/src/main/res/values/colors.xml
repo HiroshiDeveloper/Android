@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- *** common *** -->
+    <color name="black">#000000</color>
+
+    <!-- *** start page *** -->
+    <!-- start and time up message color-->
+    <color name="startFinish">#f94003</color>
+    <!-- left time color-->
+    <color name="timer">#020202</color>
+    <!-- if life points is short, that color is changed-->
+    <color name="shortLife">#ec2525</color>
+    <!-- player A color -->
+    <color name="playerA">#f80808</color>
+    <!-- player B color -->
+    <color name="playerB">#02dcfd</color>
+
+</resources>

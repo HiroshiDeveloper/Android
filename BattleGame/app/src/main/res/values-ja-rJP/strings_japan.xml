@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">バトルゲーム</string>
+    <string name="title_activity_main">メイン</string>
+    <string name="title_activity_setting">設定</string>
+    <string name="title_activity_start">スタート</string>
+
+    <!-- *** common *** -->
+    <!-- (confirm) dialog titile-->
+    <string name="confirm">確認</string>
+    <!-- (confirm) dialog message -->
+    <string name="confirmMessage">本当ですか?</string>
+    <!-- (result) dialog titile -->
+    <string name="result">結果</string>
+    <!-- (result) dialog message[try again] -->
+    <string name="tryAgain">もう一度遊びますか?</string>
+
+    <!--*** main page ***-->
+    <!--setting button-->
+    <string name="setting">設定</string>
+    <!--start button-->
+    <string name="start">スタート</string>
+
+    <!-- yes -->
+    <string name="yes">はい</string>
+    <!-- no -->
+    <string name="no">いいえ</string>
+
+    <!-- (notification) message -->
+    <string name="plyAwin">PlayerA の勝ち</string>
+    <string name="plyBwin">PlayerB の勝ち</string>
+    <string name="draw">引き分け</string>
+
+    <!-- time up message -->
+    <string name="timeUp">時間切れ</string>
+
+</resources>

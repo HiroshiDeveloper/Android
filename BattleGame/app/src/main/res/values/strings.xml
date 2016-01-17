@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">BattleGame</string>
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_start">Start</string>
+
+    <!-- *** common *** -->
+    <!-- player A -->
+    <string name="playerA">Player A</string>
+    <!-- player B  -->
+    <string name="playerB">Player B</string>
+
+    <!-- (confirm) dialog titile -->
+    <string name="confirm">Confirm</string>
+    <!-- (confirm) dialog message -->
+    <string name="confirmMessage">Are you sure?</string>
+
+    <!-- (result) dialog titile -->
+    <string name="result">Result</string>
+    <!-- (result) dialog message[try again] -->
+    <string name="tryAgain">Would you like to play again?</string>
+
+    <!-- yes -->
+    <string name="yes">YES</string>
+    <!-- no -->
+    <string name="no">NO</string>
+    
+    <!-- (notification) message -->
+    <string name="plyAwin">PlayerA is WIN</string>
+    <string name="plyBwin">PlayerB is WIN</string>
+    <string name="draw">DRAW</string>
+
+    <!-- time up message -->
+    <string name="timeUp">Time Up</string>
+
+    <!-- *** main page *** -->
+    <!--setting button-->
+    <string name="setting">Setting</string>
+    <!--start button-->
+    <string name="start">Start</string>
+
+    <!-- *** setting page *** -->
+    <string name="ok">OK</string>
+
+    <!--drop down list (Stage)-->
+    <string-array name="stage">
+        <item>stage1</item>
+        <item>stage2</item>
+        <item>stage3</item>
+        <item>stage4</item>
+    </string-array>
+
+    <!--drop down list (PlayerA)-->
+    <string-array name="playerA">
+        <item>ryu</item>
+        <item>blanka</item>
+        <item>chunlee</item>
+    </string-array>
+
+    <!--drop down list (PlayerB)-->
+    <string-array name="playerB">
+        <item>akuma</item>
+        <item>ken</item>
+        <item>dhalsim</item>
+    </string-array>
+
+</resources>

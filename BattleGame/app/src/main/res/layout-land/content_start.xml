@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_start" tools:context="com.example.htokutomi.battlegame.Start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/timer"
+                android:phoneNumber="false"
+                android:textAlignment="center"
+                android:hint="Ready..."
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/timer"
+                android:background="@drawable/start_time" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/layout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/playerA"
+                        android:id="@+id/textView"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/playerA"
+                        android:textSize="@dimen/playerTxtSize"
+                        android:textStyle="bold" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/progressBarA"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:max="100"
+                        android:progress="100"
+                        android:layout_margin="10dp"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/progress_bar"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/playerB"
+                        android:id="@+id/textView2"
+                        android:textColor="@color/playerB"
+                        android:textAlignment="textEnd"
+                        android:textSize="@dimen/playerTxtSize"
+                        android:textStyle="bold"
+                        android:layout_marginRight="10dp" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/progressBarB"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:max="100"
+                        android:progress="100"
+                        android:layout_margin="10dp"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/progress_bar"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/playerA"
+                        android:layout_height="@dimen/playerA"
+                        android:id="@+id/imageViewA"
+                        android:layout_gravity="left|bottom"
+                        android:baselineAlignBottom="false"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7">
+
+                    <ImageView
+                        android:layout_width="@dimen/beam"
+                        android:layout_height="@dimen/beam"
+                        android:id="@+id/beamA"
+                        android:layout_gravity="left|center_horizontal"
+                        android:baselineAlignBottom="false"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="@dimen/beam"
+                        android:layout_height="@dimen/beam"
+                        android:id="@+id/beamB"
+                        android:layout_gravity="right|center_horizontal"
+                        android:baselineAlignBottom="false"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="@dimen/playerB"
+                        android:layout_height="@dimen/playerB"
+                        android:id="@+id/imageViewB"
+                        android:layout_gravity="bottom|right"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

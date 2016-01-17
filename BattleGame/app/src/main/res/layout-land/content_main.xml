@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:id="@+id/settingLayout"
+            android:layout_gravity="center_horizontal"
+            android:gravity="top">
+
+            <Button
+                android:layout_width="@dimen/button"
+                android:layout_height="@dimen/button"
+                android:text="@string/setting"
+                android:id="@+id/settingButton"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="setting"
+                android:background="@drawable/main_button"
+                android:textSize="@dimen/buttonTxtSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:id="@+id/startLayout"
+            android:layout_gravity="center_horizontal"
+            android:gravity="bottom">
+
+            <Button
+                android:layout_width="@dimen/button"
+                android:layout_height="@dimen/button"
+                android:text="@string/start"
+                android:id="@+id/startButton"
+                android:layout_below="@+id/settingButton"
+                android:layout_alignStart="@+id/settingButton"
+                android:allowUndo="false"
+                android:onClick="start"
+                android:background="@drawable/main_button"
+                android:textSize="@dimen/buttonTxtSize" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
